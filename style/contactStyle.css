@@ -1,0 +1,130 @@
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    line-height: 1.5;
+    min-height: 100vh;
+    padding: 0;
+    background-color: rgba(230, 235, 238, 0.5);
+}
+
+#contactPage {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+    gap: 40px;
+}
+
+/* Scoped to contact page only */
+#getInTouch {
+    width: 20%;
+    height: 60%;
+    border: 2px solid black;
+    padding: 10px 25px;
+    border-radius: 8px;
+}
+
+#contactPage a {
+    color: black;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+#contactPage a:hover {
+    font-weight: bold;
+    color: #3D5C64;
+    transform: scale(1.1);
+}
+
+#contactPage form {
+    max-width: 500px;
+}
+
+#contactPage .form-group {
+    margin-bottom: 15px;
+}
+
+#contactPage label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#contactPage input,
+#contactPage textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: none;
+    background-color: #F0F0F0;
+}
+
+#contactPage tr {
+    display: grid;
+    grid-template-columns: 30px 200px;
+    justify-content: center;
+    margin: 20px;
+}
+
+#contactPage td {
+    text-align: center;
+}
+
+#contactPage .message {
+    font-size: 0.9em;
+    color: red;
+    margin-top: 3px;
+}
+
+#contactPage #submitBtn {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    background-color: #6B8B93;
+    color: white;
+    padding: 8px 0px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-weight: bold;
+}
+
+#contactPage #submitBtn:hover {
+    background-color: #3D5C64;
+    color: #fff;
+    font-weight: bolder;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    #contactPage {
+        flex-direction: column;
+        align-items: center;
+        margin: 30px;
+        gap: 20px;
+    }
+
+    #getInTouch,
+    #contactInfo {
+        width: 60%;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 13px;
+    }
+
+    #contactPage h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #contactPage #submitBtn {
+        height: 40px;
+        font-size: 14px;
+    }
+}

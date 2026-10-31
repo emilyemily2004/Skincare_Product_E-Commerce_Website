@@ -1,0 +1,151 @@
+#pageFooter {
+    background-color: #3D5C64;
+    margin: auto;
+    padding: 10px;
+    height: auto;
+    min-height: 50vh;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 20px;
+    color: rgb(226, 239, 247, 0.75);
+}
+
+.Newsletter,
+.about,
+.social {
+    color: rgb(226, 239, 247, 0.75);
+    flex: 1;
+    text-align: left;
+    align-content: flex-start;
+    padding-bottom: 6px;
+}
+
+h3 {
+    color: #e2eff7;
+}
+
+.about ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.about ul li {
+    padding-bottom: 20px;
+}
+
+.social-item {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.about ul li a, 
+.social a {
+    display: inline-block;
+    transition: transform 0.3s, color 0.3s;
+    color: rgb(226, 239, 247, 0.75);
+    text-decoration: none;
+}
+
+.social-item i,
+.social-item label {
+    display: inline-block;
+    transition: transform 0.3s, color 0.3s;
+    color: rgb(226, 239, 247，0.5);
+}
+
+.about ul li a:hover,
+.social-item:hover i,
+.social-item:hover a {
+    color: white;
+    transform: scale(1.05);
+}
+
+.about ul li a:hover,
+.social-item:hover a {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: left;
+    padding: 10px;
+    padding-top: 80px;
+    font-size: 14px;
+    color: rgb(226, 239, 247, 0.5);
+}
+
+@media (max-width: 1024) {
+    #pageFooter {
+        height: auto;
+        margin-top: 30px;
+        padding: 20px 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    #pageFooter {
+        height: auto;
+        margin-top: 30px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .Newsletter,
+    .about,
+    .social {
+        flex: none;
+        text-align: left;
+        width: 100%;
+    }
+
+    .social-item {
+        justify-content: left;
+    }
+
+    .footer-bottom {
+        text-align: left;
+        font-size: 12px;
+    }
+
+    #pageFooter {
+        padding: 20px 10px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    #pageFooter {
+        height: auto;
+        margin-top: 30px;
+    }
+
+    .footer {
+        padding: 10px;
+    }
+
+    .footer-bottom {
+        font-size: 12px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .social-item {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
