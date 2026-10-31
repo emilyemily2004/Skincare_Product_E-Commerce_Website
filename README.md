@@ -41,10 +41,8 @@ Make sure you have the following installed before running the project:
 
 ## Installation & Execution
 
-    1. Download Project
-        - Download the UECS2194_Assignment_P4_G10.zip
-        - Extract it into 'www' folder of your WAMP Installation
-        - Example: C:/wamp64/www/assignment
+    1. Clone the Project from github repository and place it in the `www` directory of WAMP Server.
+        - Example: C:\wamp64\www\Aurevia
     
     2. Open and start the Wamp Server
 
@@ -53,11 +51,11 @@ Make sure you have the following installed before running the project:
             - username: root
             - password: "" (Leave it Empty)
             - Server Choice: MySQL
-        b. Import db.sql in UECS2194_Assignment_P4_G10 folder into phpMyAdmin
+        b. Import db.sql into phpMyAdmin
 
     4. Program Execution
         - Open your browser and go to localhost(PORT NUMBER)/foldername/pagename
-        - Example: localhost8081/UECS2194_Assignment_P4_G10/index.php
+        - Example: localhost8081/Aurevia/index.php
 
  
     
